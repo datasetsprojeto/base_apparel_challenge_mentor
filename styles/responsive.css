@@ -1,8 +1,10 @@
 /* ===== MEDIA QUERIES (DESKTOP) ===== */
 @media (min-width: 768px) {
   .container {
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('../images/bg-pattern-desktop.svg'), var(--gradient-light);
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, center;
   }
 
   .main-content {

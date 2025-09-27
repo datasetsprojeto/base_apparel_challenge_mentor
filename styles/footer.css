@@ -1,0 +1,44 @@
+/* ===== FOOTER ===== */
+.footer {
+  margin: 0;
+  background-color: var(--white);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 0.75rem;
+  color: var(--desaturated-red);
+  line-height: 1.5;
+}
+
+.attribution a {
+  color: var(--soft-red);
+  text-decoration: none;
+  transition: var(--transition-fast);
+  font-weight: var(--font-weight-semibold);
+}
+
+.attribution a:hover,
+.attribution a:focus {
+  color: var(--dark-grayish-red);
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Estilos específicos para desktop */
+@media (min-width: 768px) {
+  .footer {
+    position: relative;
+    z-index: 5; /* Garante que fique acima do background pattern */
+  }
+  
+  .attribution {
+    font-size: 0.875rem;
+  }
+}
