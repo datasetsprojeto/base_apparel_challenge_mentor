@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header with Logo -->
+    <header class="header">
+      <div class="logo">
+       <image src="./images/logo.svg" alt="logo Base Apparel"></image>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Image (Mobile) -->
+      <div class="hero-image-mobile">
+        <img src="./images/hero-mobile.jpg" alt="Fashion model" />
+      </div>
+
+      <!-- Content Section -->
+      <section class="content-section">
+        <div class="content-wrapper">
+          <h1 class="main-title">
+            <span class="title-light">WE'RE</span>
+            <span class="title-bold">COMING</span>
+            <span class="title-bold">SOON</span>
+          </h1>
+
+          <p class="description">
+            Hello fellow shoppers! We're currently building our new fashion store. 
+            Add your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+
+          <!-- Email Form -->
+          <form class="email-form" id="emailForm" novalidate>
+            <div class="input-container">
+              <input 
+                type="email" 
+                id="emailInput"
+                class="email-input"
+                placeholder="Email Address"
+                aria-describedby="error-message"
+                required
+              />
+              <div class="error-icon" id="errorIcon" aria-hidden="true">
+                <image src="./images/icon-error.svg" alt="error-icon"></image>
+              </div>
+              <button type="submit" class="submit-btn" aria-label="Subscribe to newsletter">
+                <svg width="12" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="#FFF" stroke-width="2" fill="none" d="m1 1 8.836 8.836L1 18.671"/>
+                </svg>
+              </button>
+            </div>
+            <div class="error-message" id="errorMessage" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Hero Image (Desktop) -->
+      <div class="hero-image-desktop">
+        <img src="./images/hero-desktop.jpg" alt="Fashion model" />
+      </div>
+    </main>
+  </div>
+
+  <!-- Success Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-content">
+        <div class="success-icon">
+          <img src="./images/icon-arrow.svg" alt="arrow-icon">
+        </div>
+        <h2>Thank you!</h2>
+        <p>You've successfully subscribed to our newsletter. We'll keep you updated with our latest news and launch deals.</p>
+        <button class="modal-close-btn" id="modalCloseBtn">Got it!</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./scripts/EmailValidator.js"></script>
+  
+</body>
+</html>

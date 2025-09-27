@@ -1,0 +1,9 @@
+/* ===== HEADER ===== */
+.header {
+  padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-xl);
+}
+
+.logo svg {
+  height: auto;
+  width: 100px;
+}

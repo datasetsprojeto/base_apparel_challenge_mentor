@@ -1,0 +1,51 @@
+/* ===== RESET E VARIÁVEIS ===== */
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+  /* Colors */
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-grayish-red: hsl(0, 6%, 24%);
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(0, 100%, 98%);
+  --error-red: hsl(0, 93%, 68%);
+  --success-green: hsl(120, 61%, 50%);
+
+  /* Gradients */
+  --gradient-light: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --gradient-button: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+  /* Typography */
+  --font-family: 'Josefin Sans', sans-serif;
+  --font-size-base: 16px;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+
+  /* Border radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 28px;
+  --border-radius-lg: 12px;
+
+  /* Shadows */
+  --shadow-light: 0 15px 20px rgba(198, 110, 110, 0.247569);
+  --shadow-button: 0 15px 20px rgba(198, 110, 110, 0.4);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+}

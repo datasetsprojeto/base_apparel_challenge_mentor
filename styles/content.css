@@ -1,0 +1,55 @@
+/* ===== SEÇÃO DE CONTEÚDO ===== */
+.content-section {
+  order: 3;
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  text-align: center;
+}
+
+.content-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* ===== HERO IMAGES ===== */
+.hero-image-mobile {
+  order: 2;
+}
+
+.hero-image-desktop {
+  display: none;
+}
+
+.hero-image-mobile img,
+.hero-image-desktop img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* ===== TIPOGRAFIA ===== */
+.main-title {
+  font-size: 2.5rem;
+  line-height: 1.05;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-md);
+}
+
+.title-light {
+  font-weight: var(--font-weight-light);
+  color: var(--desaturated-red);
+  display: block;
+}
+
+.title-bold {
+  font-weight: var(--font-weight-semibold);
+  color: var(--dark-grayish-red);
+  display: block;
+}
+
+.description {
+  font-size: 0.875rem;
+  line-height: 1.57;
+  margin-bottom: var(--spacing-xl);
+  color: var(--desaturated-red);
+}
