@@ -36,7 +36,6 @@
 }
 
 .title-light {  
-  margin-top: 150px;
   font-weight: var(--font-weight-light);
   color: var(--desaturated-red);
   display: block;

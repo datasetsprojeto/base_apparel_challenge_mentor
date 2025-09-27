@@ -1,10 +1,40 @@
 /* ===== MEDIA QUERIES (DESKTOP) ===== */
 @media (min-width: 768px) {
   .container {
-    background-image: url('../images/bg-pattern-desktop.svg'), var(--gradient-light);
-    background-size: cover, cover;
-    background-repeat: no-repeat, no-repeat;
-    background-position: left center, center;
+    background: var(--gradient-light);
+  }
+
+  .title-light {  
+  margin-top: 170px;
+  }
+
+  /* Background pattern apenas na seção de conteúdo */
+  .content-section {
+    background-image: url('../images/bg-pattern-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+    position: relative;
+  }
+
+  /* Garantir que o background pattern fique atrás do conteúdo */
+  .content-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/bg-pattern-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+    z-index: 1;
+  }
+
+  .content-wrapper {
+    position: relative;
+    z-index: 2;
   }
 
   .main-content {
@@ -21,6 +51,7 @@
     display: block;
     order: 2;
     flex: 0 0 40%;
+    background: var(--white);
   }
 
   .hero-image-desktop img {
@@ -49,6 +80,7 @@
     left: 0;
     padding: var(--spacing-2xl) 0 0 10%;
     z-index: 10;
+    background: transparent;
   }
 
   .logo svg {
@@ -80,6 +112,13 @@
 
   .error-icon {
     right: 120px;
+  }
+
+  /* Footer precisa ficar acima do background */
+  .footer {
+    position: relative;
+    z-index: 10;
+    background: var(--white);
   }
 }
 
